@@ -23,7 +23,7 @@ class Reponse
     private ?int $q3 = null;
 
     #[ORM\Column]
-    private ?int $q4 = null;
+    private ?array $q4;
 
     #[ORM\Column]
     private ?int $q5 = null;
@@ -72,12 +72,12 @@ class Reponse
         return $this;
     }
 
-    public function getQ4(): ?int
+    public function getQ4(): ?array
     {
         return $this->q4;
     }
 
-    public function setQ4(int $q4): static
+    public function setQ4(array $q4): self
     {
         $this->q4 = $q4;
 
