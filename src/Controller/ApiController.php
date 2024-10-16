@@ -10,7 +10,7 @@ use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Attribute\Route;
 use Symfony\Component\Serializer\SerializerInterface;
 
-#[Route('/api', name: 'api_')]
+#[Route('/', name: 'api_')]
 class ApiController extends AbstractController
 {
     #[Route('/', name: 'index', methods: ['GET'])]
